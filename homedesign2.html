@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap4/fontawesome-free-5.8.2-web/css/all.css">
+    <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+    <link rel="stylesheet" href="homedesign2.CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <section>
+        <div class="header">
+            <div class="container headercontainer">
+                <div class="row">
+                    <div class="col-md-3 col-sm-2">
+                        <img class="logo" src="logohome.jpg">
+                    </div>
+
+                    <div class="col-md-3 col-sm-2 d-none d-sm-block">
+                        <div class="row">
+                            <i class="fas fa-phone-volume headericon phoneicon"></i>
+                            <a class="active callus" href="#call us"><b>CALL US:</b><p class="callno">7349829308</p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-2 d-none d-sm-block">
+                        <div class="row">
+                            <i class="fas fa-mail-bulk headericon"></i>
+                            <a href="#mailus"><b class="mailus">MAIL US:</b><p class="gmail">bushi@gmail.com</p></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-2 d-none d-sm-block">
+                        <div class="row">
+                            <i class="fas fa-hands-helping headericon"></i>
+                            <a href="#visitus"><b class="visitus">VISIT US:</b><p class="visitaddress">wapda town lahore</p></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nav bar code -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active navbackcolor">
+                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item itemspace">
+                                <a class="nav-link" href="#">PROPERTIES</a>
+                            </li>
+                            <li class="nav-item  itemspace">
+                                <a class="nav-link" href="#">AGENTS</a>
+                            </li>
+                            <li class="nav-item  itemspace">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item itemspace">
+                                <a class="nav-link" href="#">IDX</a>
+                            </li>
+                            <li class="nav-item itemspace ">
+                                <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item itemspace">
+                                <a class="nav-link" href="#">FEATURES</a>
+                            </li>
+                            <li class="nav-item itemspacelast">
+                                <a class="nav-link" href="#">SUBMIT OBJECT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--background img form code -->
+    <section class="formimg">
+        <div class="container">
+            <!-- Button to Open the Modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Open modal
+      </button> -->
+
+
+            <div class="row">
+                <div class="col-sm-6 col-xs-6 col-md-6">
+                    <div class="transparentdiv">
+                        <h3 class="house">House Of Your Dream</h3>
+                        <p class="housetext">We Will Help To Find It</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row d-lg-none d-xl-none ">
+                <div class="col-sm-6 col-xs-6">
+                    <button type="button" class="btn btn-primary btn-block modelbutton" data-toggle="modal" data-target="#myModal">
+                                        Find Your Home
+                                      </button>
+                </div>
+
+            </div>
+
+            <div class="row d-none d-sm-block d-md-none d-lg-block">
+                <div class="col-sm-3">
+                    <div class="smalldiv">
+                        <div class="text-center">
+                            <h4>Find Your Home</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- without model form code -->
+            <div class="row d-none d-sm-block d-md-none d-lg-block">
+                <div class="col-md-12">
+
+                    <form class="formset formback  form-control">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="labelpropertytype"><b>Property Type</b></label>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <select class="classic propertytypedrop">
+                                                        <option>Any</option>
+                                                        <option>No external background image</option>
+                                                        <option>No wrapper</option>
+                                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 price-range-custpmize">
+                                    <label class="price_rangelabel"><b>Price Range</b></label>
+                                    <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" placeholder="$2000" />
+                                    <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" placeholder="$5000" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 locationcolumn">
+                                <label class="labellocation"><b>Location</b></label>
+                                <select class="classic locationdrop">
+                                                    <option>Any</option>
+                                                    <option>No external background image</option>
+                                                    <option>No wrapper</option>
+                                                    </select>
+
+                                <label class="labelbeds"><b>Beds</b></label>
+                                <label class="labelbaths"><b>Baths</b></label>
+
+                                <select class="classic bedsdrop">
+                                                    <option>Any</option>
+                                                    <option>No external background image</option>
+                                                    <option>No wrapper</option>
+                                                    </select>
+
+                                <select class="classic smlselect1bath bathsdrop">
+                                                    <option>Any</option>
+                                                    <option>No external background image</option>
+                                                    <option>No wrapper</option>
+                                                    </select>
+
+
+                            </div>
+                            <div class="col-md-4 propertystatuscolumn">
+                                <label class="labelpropertystatus"><b>Property Status</b></label>
+                                <select class="classic propertystatusdrop ">
+                                                    <option>Any</option>
+                                                    <option>No external background image</option>
+                                                    <option>No wrapper</option>
+                                                   </select>
+
+                                <label class="labelarea"><b>Area</b>(Sq Ft)</label>
+
+                                <select class="classic smlselectarea areadrop">
+                                                    <option>Any</option>
+                                                     <option>No external background image</option>
+                                                    <option>No wrapper</option>
+                                                    </select>
+
+                                <button type="submit" class="formcolorbtn">FIND NOW</button>
+
+                            </div>
+                        </div>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- property salider code -->
+    <section class="property">
+        <div class="text-center propertytext">
+            <h1 class="latestproperty">Latest Properties</h1>
+        </div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-3 active">
+                        <div class="card propertycard ">
+
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="retailspace">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- nesxt slider agents -->
+    <section class="agent">
+        <div class="text-center headingbestagent">
+            <h1 class="headingagent">Our Best Agents</h1>
+        </div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-3 active">
+                        <div class="card agentcard ">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3">
+                        <div class="card agentcard">
+                            <img class="card-img-top homeimg" src="bestagent.jpg" alt="Card image cap">
+
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h6 class="djohan">Djohan Kollings</h6>
+                                    <p>5 properties</p>
+                                </div>
+                                <ul class="cardlistagent">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fas fa-phone-volume agenticon"></i>
+                                            </div>
+                                            <p class="phonno">590348509</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-envelope agenticon1" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="agentnum1">BA@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-2">
+                                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                                            </div>
+                                            <p class="globaltext">infoexample.com</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+
+    <!-- imag transparent code -->
+    <section class="transparent">
+        <div class="container-fluid setposition">
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-4 settrans">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-2">
+                                <img class="logo transparentlogo" src="logohome.jpg">
+                            </div>
+                            <div class="row">
+                                <h1 class="real">REAL ESTATE</h1>
+                            </div>
+                        </div>
+                        <p class="realpara">Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. pri ponderum tractatos.</p>
+                        <button type="submit" class="btn-warning transparentbtn">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- overlay effects code -->
+
+    <section class="overlaytop">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="ourfeature">Our Features</h1>
+                <p class="textfeature">Make your life easer with "UP Real Estate. </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6  col-sm-4 overlaytopset overlaydesign">
+                    <img src="gard1.jpg" alt="home" class="siximage">
+                    <div class="overlay">
+                        <a href="" class="iconoverlay" title="">
+                            <i class="fa fa-home homeiconoverlay"></i>
+                        </a>
+                        <div class="Exclusive">
+                            <h3 class="headingexclusive">EXCLUSIVE</h3>
+                            <p class="offere">Offers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd column overlay start  -->
+
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h5 class="headingexclusive">EXCLUSIVE</h5>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h5 class="headingexclusive">EXCLUSIVE</h5>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo ">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h5 class="headingexclusive">EXCLUSIVE</h5>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h5 class="headingexclusive">EXCLUSIVE</h5>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h5 class="headingexclusive">EXCLUSIVE</h5>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 overlaytopset overlaydesign">
+                            <img src="home2.jpg" alt="home" class="twoimg ">
+                            <div class="overlay overlaytwo">
+                                <a href="" class="iconoverlaytwo" title="">
+                                    <i class="fa fa-home homeiconoverlaytwo"></i>
+                                </a>
+                                <div class="Exclusivetwo">
+                                    <h3 class="headingexclusive">EXCLUSIVE</h3>
+                                    <p class="offers">Offers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- featured Listings code salider -->
+    <section class="featuredlisting">
+        <div class="text-center">
+            <h1 class="featured_heading">Featured Listings</h1>
+        </div>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item col-md-3 active">
+                        <div class="card propertycard ">
+
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item col-md-3">
+                        <div class="card propertycard">
+                            <div class="featuretransparent">
+                                <img class="card-img-top featureimg" src="gard1.jpg" alt="Card image cap">
+                                <div class="middle">
+                                    <div class="textfeature2"><i class="fa fa-search-plus searchicon" aria-hidden="true"></i></div>
+                                    <div class="textfeature1"><i class="fa fa-link linkicon" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+
+                                <ul class="cardlist">
+                                    <li> <i class="fa fa-bed bedicon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="three">3</p>
+                                    </li>
+                                    <li> <i class="fa fa-shopping-cart carticon" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="two">2</p>
+                                    </li>
+                                    <li><i class="fa fa-first-order firstorder" aria-hidden="true"></i></li>
+                                    <li>
+                                        <p class="one">1</p>
+                                    </li>
+                                </ul>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h6 class="">RETAIL SPACE IN WEST SIDE</h6>
+                                        </div>
+                                        <div class="row">
+                                            <p class="retailspace1"> Real Estate House Realty Homes for Sale.Realty Homes for Sale...</p>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <h5 class="usd">USD 999,00</h5>
+                                            <i class="fa fa-share-alt share" aria-hidden="true"></i>
+                                            <i class="fa fa-star-o star" aria-hidden="true"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- services Accordian -->
+
+    <section class="services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h3 class="serviceheading">Our Services</h3>
+                    </div>
+                    <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default panel1">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                         Donec eget leo facilistis
+                                         </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body panelbody">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.le VHS.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                         Numc venenatis neque vitae
+                                         </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body panelbody">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                         Namut accumsan massa
+                                         </a>
+                                </h4>
+
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body panelbody">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h3 class="seceondservice">What People Say About Us</h3>
+                    </div>
+                    <div class="row equalpanel">
+                        <div class="col-sm-2">
+                            <img src="bestagent.jpg" class="bbimag">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="hanryimg">Hanry Ford</h4>
+                            <p class="bbimgtext">Anim pariatur cliche reprehenderit,<br> enim eiusmod high life accusamus terry.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <img src="bestagent.jpg" class="bbimag1">
+                        </div>
+                        <div class="col-sm-10">
+                            <h4 class="hanryimg1">Eline Dorthar</h4>
+                            <p class="bbimgtext1">Anim pariatur cliche reprehenderit,<br> enim eiusmod high life accusamus terry .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gogal map code -->
+    <!-- 
+    <section class="gogalmap">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="gogalcontect">Our Contacts</h1>
+                <p class="gogaltext">Anim pariatur cliche reprehenderit,Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. enim eiusmod high life accusamus terry richardson ad squid.</p>
+            </div>
+            <div class="row  maptop">
+                <div class="col-md-2">
+                </div>
+
+                <div class="col-md-6">
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+                    <script>
+                        function myMap() {
+                            var mapProp = {
+                                center: new google.maps.LatLng(51.508742, -0.120850),
+                                zoom: 5,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                        }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+                </div>
+                <ul class="gogaliconlist">
+                    <li>
+                        <div class="row iconsetting">
+                            <div class="col-sm-2 icontop">
+                                <i class="fas fa-phone-volume" style='font-size:26px'></i>
+                            </div>
+                            <p class="phonno1">590348509</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-2 icontop1 textsetting1">
+                                <i class="far fa-clock" style='font-size:22px'></i>
+                            </div>
+                            <p class="">monday 9:00 to 18:00</p>
+                        </div>clock
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <i class="fa fa-globe agentnum2" aria-hidden="true"></i>
+                            </div>
+                            <p class="globaltext">infoexample.com</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="col-md-2">
+                    <div class="row iconsetting">
+                        <div class="col-sm-4 icontop">
+                            <i class="fas fa-phone-volume" style='font-size:26px'></i>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="textsetting2">878278878</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 icontop textsetting1">
+                            <i class="far fa-clock" style='font-size:22px'></i>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="textsetting3">monday9:00to18:00</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 icontop textsetting1">
+                            <i class="fas fa-phone-volume" style='font-size:26px'></i>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="textsetting3">wapdatownLahore</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 icontop textsetting1">
+                            <i class="fas fa-mail-bulk " style='font-size:26px'></i>
+                        </div>
+                        <div class="col-sm-4">
+                            <p class="textsetting3">bushi@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- footer salider & code -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <h1 class="textparner">Our Partners</h1>
+                    </div>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner row w-100 mx-auto">
+                            <div class="carousel-item col-md-3 active">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <!-- <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="carousel-item col-md-3">
+                                <div class="card brand">
+                                    <img class="card-img-top img-fluid" src="gard1.jpg" alt="Card image cap">
+                                </div>
+                            </div>-->
+                        </div>
+                        <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a> -->
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small indigo">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+                    <div class="col-sm-3 footertext">
+                        <p class=" mt-3 mb-4">
+                            <h5 class="footertext">About Up Real Estate</h5>
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="logohome.jpg" class="footerimg">
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="Aboutreal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, culpa?</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="socialicon">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <i class="fa fa-facebook fb" aria-hidden="true"></i>
+                                <i class="fa fa-google-plus fb" aria-hidden="true"></i>
+                                <i class="fa fa-vimeo vimeo fb" aria-hidden="true"></i>
+                                <!-- <i class="fa fa-pinterest-p fb" aria-hidden="true"></i> -->
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mx-auto footertext">
+
+                        <!-- Links -->
+                        <p class="mt-3 mb-4">
+                            <h5 class="footertext">Contact Info</h5>
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fas fa-user footericon" style='font-size:20px'></i>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p class="textfooter">wapdatownLahore</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <i class="fas fa-phone-volume footericon" style='font-size:20px'></i>
+                                </div>
+                                <div class="col-sm-2">
+                                    <p class="textfooter">30954903</p>
+                                </div>
+                            </div>
+
+
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fas fa-mail-bulk footericon" style='font-size:20px'></i>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p class="textfooter">bushi@gmail.com</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fas fa-clock footericon" style='font-size:20px'></i>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p class="textfooter">Mondaytofriday <br> From9.00to18.00</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mx-auto footertext">
+
+                        <!-- Links -->
+                        <p class="mt-3 mb-4">
+                            <h5 class="footertext">Latest Tweets</h5>
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-10 ">
+                                        <p class="boldtext" style="color:#b1d712;">
+                                            @Lorem ipsum dolor
+                                            <span style="color: #feffff">Expedita sapiente sint,amet consectetur adipisicing</span>
+                                            <span style="color: #b1d712">amet consectetur adipisicing summer.....</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <i class="fa fa-twitter twitter" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <p class="boldtext" style="color:#b1d712;">
+                                            @Lorem ipsum dolor
+                                            <span style="color: #feffff">Expedita sapiente sint,amet consectetur adipisicing</span>
+                                            <span style="color: #b1d712">amet consectetur adipisicing summer.....</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mx-auto footertext">
+
+                        <!-- Links -->
+                        <p class="  mt-3 mb-4">
+                            <h5 class="footertext">Newsletter</h5>
+                        </p>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil </p>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <input type="type" name="input" class="inputtext footerinput" placeholder="Enter Your Email Address">
+                                        <input type="submit" class="signup" value="SIGN UP">
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+
+            <hr>
+            <!-- Footer Links -->
+
+
+            <div class="footer-copyright text-left  py-3 copyright">
+                <p class="copyrighttext">© 2015 Up Real Estate All Right Reserved</p>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="css/bootstrap4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script href="js/2nd.js"></script>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header ">
+                    <h4 class="modal-title">Find Your Home</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- code with model -->
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <!-- <div class="row  d-sm-block"> -->
+                    <!-- <div class="col-md-12"> -->
+
+                    <form class="formset formback  form-control">
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="labelpropertytype"><b>Property Type</b></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <select class="classic propertytypedrop">
+                                            <option>Any</option>
+                                            <option>No external background image</option>
+                                            <option>No wrapper</option>
+                                        </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="price_rangelabel"><b>Price Range</b></label>
+                                <input type="number" min=0 max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field" placeholder="$2000" />
+                                <input type="number" min=0 max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field" placeholder="$5000" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="labellocation"><b>Location</b></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <select class="classic locationdrop">
+                                                <option>Any</option>
+                                                <option>No external background image</option>
+                                                <option>No wrapper</option>
+                                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="labelbeds"><b>Beds</b></label>
+                                <label class="labelbaths"><b>Baths</b></label>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+
+                                <select class="classic bedsdrop">
+                                            <option>Any</option>
+                                            <option>No external background image</option>
+                                            <option>No wrapper</option>
+                                            </select>
+
+                                <select class="classic bathsdrop">
+                                            <option>Any</option>
+                                            <option>No external background image</option>
+                                            <option>No wrapper</option>
+                                            </select>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="labelpropertystatus"><b>Property Status</b></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <select class="classic propertystatusdrop">
+                                            <option>Any</option>
+                                            <option>No external background image</option>
+                                            <option>No wrapper</option>
+                                           </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <label class="labelarea"><b>Area</b>(Sq Ft)</label>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <select class="classic  areadrop">
+                                            <option>Any</option>
+                                             <option>No external background image</option>
+                                            <option>No wrapper</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <button type="submit" class="formcolorbtn">FIND NOW</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html
